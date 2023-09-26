@@ -1,0 +1,12 @@
+width = float (input ("Ширина поверхности: "))
+height = float (input ("Высота поверхности: "))
+color = float(input ("Расход краски кв.м/л: "))
+color_v = int (input("Объём банки в литрах:  "))
+procent = (int (input ("Процент запаса: "))) / 100
+full_square = round(width * height, 2)
+full_color = round((full_square / color) + procent * (full_square / color), 2)
+full_bank = int((full_color // color_v) + 1)
+print (f"Площадь покраски: {full_square}")
+print (f"Количество литров краски для данной площади: {full_color}")
+print (f"Количество банок краски на данную площадь: {full_bank}")
+print (f"Неиспользуемые литры краски: {full_color - (full_bank * color_v):.2f}")
