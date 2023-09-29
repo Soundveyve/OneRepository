@@ -17,4 +17,4 @@ for mentor in final_list_mentor: #Цикл на просмотр данных
     print (f"\nФамилия преподавателя: {mentor.surname}") #К атрибутам обращаемся не по индексу, а
 #по названию атрибута, что в тысячу раз удобнее
     print (f"Должность преподавателя: {mentor.rang}")
-    print (f"Количество студентов во всех группах: {mentor.students_num}") #
+    print (f"Количество студентов во всех группах: {mentor.students_num}") #ASD
